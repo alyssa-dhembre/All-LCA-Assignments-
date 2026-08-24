@@ -1,1 +1,93 @@
+# Assignment 1
+# Different Operations on Dictionary, Tuple and List Data Structure
+
+# Algorithm / Pseudocode:
+# 1. Create a list of student names.
+# 2. Perform append, insert, remove, index, and count operations on the list.
+# 3. Create a tuple of student names.
+# 4. Perform access, count, index, length, and slicing operations on the tuple.
+# 5. Create a dictionary with student IDs and names.
+# 6. Add, update, and remove dictionary elements.
+# 7. Display dictionary keys and values.
+# 8. Print the results of all operations.
+
+
+# ---------------- LIST ----------------
+
+student_list = ["Amit", "Rahul", "Sneha", "Priya"]
+
+print("STUDENT LIST:")
+print(student_list)
+
+student_list.append("Rohan")
+print("\nAfter appending Rohan:")
+print(student_list)
+
+student_list.insert(1, "Neha")
+print("\nAfter inserting Neha:")
+print(student_list)
+
+student_list.remove("Sneha")
+print("\nAfter removing Sneha:")
+print(student_list)
+
+print("\nIndex of Rahul:")
+print(student_list.index("Rahul"))
+
+print("\nCount of Priya:")
+print(student_list.count("Priya"))
+
+
+# ---------------- TUPLE ----------------
+
+student_tuple = ("Amit", "Rahul", "Sneha", "Priya")
+
+print("\nSTUDENT TUPLE:")
+print(student_tuple)
+
+print("\nFirst student:")
+print(student_tuple[0])
+
+print("\nCount of Rahul:")
+print(student_tuple.count("Rahul"))
+
+print("\nIndex of Sneha:")
+print(student_tuple.index("Sneha"))
+
+print("\nNumber of students:")
+print(len(student_tuple))
+
+print("\nFirst three students:")
+print(student_tuple[0:3])
+
+
+# ---------------- DICTIONARY ----------------
+
+student_dict = {
+    101: "Amit",
+    102: "Rahul",
+    103: "Sneha",
+    104: "Priya"
+}
+
+print("\nSTUDENT DICTIONARY:")
+print(student_dict)
+
+student_dict[105] = "Rohan"
+print("\nAfter adding student:")
+print(student_dict)
+
+student_dict[102] = "Rahul Sharma"
+print("\nAfter updating student:")
+print(student_dict)
+
+del student_dict[103]
+print("\nAfter removing student:")
+print(student_dict)
+
+print("\nStudent IDs:")
+print(student_dict.keys())
+
+print("\nStudent Names:")
+print(student_dict.values())
 

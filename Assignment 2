@@ -1,1 +1,25 @@
+# Name: Alyssa
+# Assignment 2
+# Program to find the largest of three numbers
 
+# Algorithm / Pseudocode:
+# 1. Accept three integer numbers from the user.
+# 2. Compare the first number with the second and third numbers.
+# 3. If the first number is greater than or equal to both, it is the largest.
+# 4. Otherwise, compare the second number with the first and third numbers.
+# 5. If the second number is greater than or equal to both, it is the largest.
+# 6. Otherwise, the third number is the largest.
+# 7. Display the largest number.
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+print("Largest of the three numbers is:", largest)

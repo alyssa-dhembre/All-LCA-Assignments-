@@ -1,3 +1,4 @@
+# Assignment No.3
 import math 
 x  = float(input("Enter the first side:"))
 y  = float(input("Enter the second side:"))
